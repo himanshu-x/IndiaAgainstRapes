@@ -1,0 +1,118 @@
+<!-- <section>
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12 col m4">
+                <img style="width: 300px;" src="../images/womenProtest.jpg">
+                <h2>Justice</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+                    Donec sed odio dui. </p>
+                <p>
+                    <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                </p>
+            </div>
+            <div class="col s12 col m4">
+                <img style="width: 300px;" src="../images/womenProtest.jpg">
+                <h2>Justice</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+                    Donec sed odio dui. </p>
+                <p>
+                    <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                </p>
+            </div>
+            <div class="col s12 col m4">
+                <img style="width: 300px;" src="../images/womenProtest.jpg">
+                <h2>Justice</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+                    felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+                    massa justo sit amet risus.</p>
+                <p>
+                    <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col s12 m4" ng-repeat="topStorie in topStories">
+            <div> {{topStorie.id}} </div>
+            <div> {{topStorie.title}} </div>
+            <div> {{topStorie.descr}} </div>
+            <img style="width: 300px;" src="{{topStorie.imageUrl}}">
+        </div>
+    </div>
+</div> -->
+
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img src="../images/womenProtest.jpg">
+            <!-- random image -->
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="../images/womenProtest.jpg">
+            <!-- random image -->
+            <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="../images/womenProtest.jpg">
+            <!-- random image -->
+            <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="../images/womenProtest.jpg">
+            <!-- random image -->
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="col s12 m4">
+    <div class="card">
+        <div class="card-image ">
+            <img src="../images/womenProtest.jpg">
+            <div style="position: absolute; bottom: 0" class="center">
+                <h1 class="center">#FlashBriefings</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m4" ng-repeat="item in topStories">
+            <div class="card" ui-sref="web.stories.fullStory({'storyId': item.id})">
+                <div class="card-image">
+                    <img ng-src="{{item.imageUrl}}">
+                </div>
+                <div>
+                    <center>{{item.id}} </center>
+                </div>
+                <div>
+                    <center>
+                        <h3>{{item.title}} </h3>
+                    </center>
+                </div>
+                <div class="card-content">
+                    {{item.descr}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

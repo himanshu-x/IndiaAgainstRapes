@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css" media="screen,projection"
+  />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body ng-app="myApp">
+  <div ui-view=""></div>
+</body>
+<!--JavaScript at end of body for optimized loading-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+<script src="../app/app.js"></script>
+<script src="controllers/masterController.js"></script>
+<script src="controllers/homeController.js"></script>
+<script src="controllers/storiesController.js"></script>
+<script src="controllers/fullStoryController.js"></script>
+
+</html>

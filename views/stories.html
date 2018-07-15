@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12 m4" ng-repeat="item in totalStories">
+            <div class="card" ui-sref="web.stories.fullStory({'storyId': item.id})">
+                <div class="card-image">
+                    <img ng-src="{{item.imageUrl}}">
+                </div>
+                <div>
+                    <center>{{item.id}} </center>
+                </div>
+                <div>
+                    <center>
+                        <h3>{{item.title}} </h3>
+                    </center>
+                </div>
+                <div class="card-content">
+                    {{item.descr}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
