@@ -1,8 +1,6 @@
 
 angular.module("myApp")
     .controller('storiesController', ['$scope', '$stateParams', function ($scope, $stateParams) {
-
-
         var jack = $stateParams;
         $scope.totalStories = [
 
@@ -16,7 +14,7 @@ angular.module("myApp")
                 id: 2,
                 title: "Movement",
                 descr: "Candle March is set against the backdrop of the issues of women empowerment and injustice in india.It releases on December.",
-                imageUrl: "../images/story1.jpg"
+                imageUrl: "../images/womenProtest.jpg"
             },
             {
                 id: 3,
@@ -25,26 +23,25 @@ angular.module("myApp")
                 imageUrl: "../images/story1.jpg"
             },
             {
-                id: "",
+                id: 4,
                 title: "Justice",
                 descr: "Candle March is set against the backdrop of the issues of women empowerment and injustice in india.It releases on December.",
-                imageUrl: "../images/story1.jpg"
+                imageUrl: "../images/womenProtest.jpg"
             },
             {
-                id: 2,
+                id: 5,
                 title: "Movement",
                 descr: "Candle March is set against the backdrop of the issues of women empowerment and injustice in india.It releases on December.",
                 imageUrl: "../images/story1.jpg"
             },
             {
-                id: 3,
+                id: 6,
                 title: "Candle March",
                 descr: "Candle March is set against the backdrop of the issues of women empowerment and injustice in india.It releases on December.",
-                imageUrl: "../images/story1.jpg"
+                imageUrl: "../images/womenProtest.jpg"
             }
         ]
 
-        $(document).ready(function () {
-            $('.slider').slider();
-        });
+
+
     }]);

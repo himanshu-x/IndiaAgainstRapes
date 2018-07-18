@@ -8,6 +8,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         .state("web", {
             url: "/web",
             templateUrl: "../views/master.html",
+           
         })
 
         .state("web.home", {
@@ -25,11 +26,33 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             views: {
                 "@web": {
                     templateUrl: "../views/contact.html",
-
+                    // controller: "contactController as ctrl"
                 }
             }
 
-        });
+        })
+        .state("web.stories", {
+            url: "/stories",
+            views: {
+                "@web": {
+                    templateUrl: "../views/stories.html",
+                    controller: "storiesController as ctrl"
+                }
+            }
+
+        })
+        .state("web.stories.fullStory", {
+            url: "/:storyId",
+            views: {
+                "@web": {
+                    templateUrl: "../views/fullStory.html",
+                    controller: "fullStoryController as ctrl"
+                }
+            }
+
+        })
+
+
 });
 
 
