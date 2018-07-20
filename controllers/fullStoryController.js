@@ -45,11 +45,10 @@ angular.module("myApp")
         ]
 
         $scope.currentStory = [];
-
-        console.log($scope.jack);
+        console.log($stateParams.currentStory)
 
         function init() {
-            $scope.currentStory = $scope.totalStories.forEach(function (item) {
+            $scope.currentStory = $scope.totalStories.filter(function (item) {
                 if (item.id == $stateParams.storyId) {
                     return true;
                 }
@@ -58,58 +57,9 @@ angular.module("myApp")
                 }
             });
         };
-
         init();
-
-        // $scope.results = [];
-
-        // $scope.jack.filter(function(item) {
-        //    angular.forEach($scope.totalStories, function(totalStorie) {
-        //       if(jack === totalStorie.id){
-        //         $scope.results.push(item);
-        //       }
-        //    });
-        // });
-
-
-
-        // $scope.currentStory = [];
-        // totalStorie.forEach(function(value){
-        // if(value.id == totalStorie.id== jack.id){
-        //     currentStory.push(jack.id);
-        // }
-        // });
-
-        // $scope.currentStory = [];
-        // totalStorie.forEach(function(value){
-        // if(value.id == totalStorie.id== jack.id){
-        //     currentStory.push(value);
-        // }
-        // });
-
-
-
     }]);
 
 
 
-// function divideHighLessVeryHighSalaryData() {
-//     data.forEach(function (item) {
 
-//         console.log(item.salary);
-//         if (item.salary <= 50000) {
-//             dataLessSalary.push(item);
-//         }
-//         else if (item.salary > 50000 && item.salary <= 70000) {
-//             dataHighSalary.push(item);
-//         }
-//         else {
-//             dataVeryHighSalary.push(item);
-//         }
-//     })
-//     console.log(dataVeryHighSalary);
-//     console.log(dataHighSalary);
-//     console.log(dataLessSalary);
-
-// };
-// divideHighLessVeryHighSalaryData();

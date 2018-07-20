@@ -8,7 +8,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         .state("web", {
             url: "/web",
             templateUrl: "../views/master.html",
-           
+
         })
 
         .state("web.home", {
@@ -51,6 +51,28 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             }
 
         })
+        .state("web.cards", {
+            url: "/cards",
+            views: {
+                "@web": {
+                    templateUrl: "../views/cards.html",
+                    controller: "cardsController as ctrl"
+                }
+            }
+
+        })
+
+        .state("web.searchCards", {
+            url: "/searchCards",
+            views: {
+                "@web": {
+                    templateUrl: "../views/searchCards.html",
+                    controller: "searchCardsController as ctrl"
+                }
+            }
+
+        })
+
 
 
 });

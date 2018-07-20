@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <input id="searchTxtBox" type="search" placeholder="Search" ng-model="searchText" style="width: 60%; margin-left: 10%;">
+            <button class="btn waves-effect waves-light" type="submit" ng-click="searchCards()" name="action">Submit</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card">
+                <div ng-repeat="item in abcd">
+                    <div>
+                        {{item.name}} 
+                    </div>
+                    <div>
+                        <center>
+                            <h3>{{item.work}} </h3>
+                        </center>
+                    </div>
+                    <div class="card-content">
+                        {{item.address}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
