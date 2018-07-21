@@ -1,12 +1,15 @@
 <nav>
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo">India Against Rape</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#!" class="brand-logo">India Against Rape</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
             <li>
                 <a ui-sref="web.home">HOME</a>
             </li>
             <li>
-                <a>ABOUT</a>
+                <a ui-sref="#">ABOUT</a>
             </li>
             <li>
                 <a ui-sref="web.stories">STORIES</a>
@@ -14,7 +17,6 @@
             <li>
                 <a ui-sref="web.contact">CONTACT US</a>
             </li>
-           
             <li>
                 <a ui-sref="web.cards">CARDS</a>
             </li>
@@ -25,4 +27,71 @@
     </div>
 </nav>
 
+<ul class="sidenav" id="mobile-demo">
+    <li>
+        <a ui-sref="web.home">Home</a>
+    </li>
+    <li>
+        <a ui-sref="#">About</a>
+    </li>
+    <li>
+        <a ui-sref="web.stories">Stories</a>
+    </li>
+    <li>
+        <a ui-sref="web.contact">Contact Us</a>
+    </li>
+    <li>
+        <a ui-sref="web.cards">Cards</a>
+    </li>
+    <li>
+        <a ui-sref="web.searchCards">SearchCards</a>
+    </li>
+</ul>
 <div ui-view=""></div>
+
+<!-- <nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">India Against Rape</a>
+        <ul id="nav-mobile " class="right hide-on-med-and-down">
+            <li>
+                <a ui-sref="web.home">HOME</a>
+            </li>
+            <li>
+                <a ui-sref="#">ABOUT</a>
+            </li>
+            <li>
+                <a ui-sref="web.stories">STORIES</a>
+            </li>
+            <li>
+                <a ui-sref="web.contact">CONTACT US</a>
+            </li>
+
+            <li>
+                <a ui-sref="web.cards">CARDS</a>
+            </li>
+            <li>
+                <a ui-sref="web.searchCards">SEARCHCARDS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<ul id="slide-out" class="sidenav">
+    <li>
+        <a ui-sref="web.home">Home</a>
+    </li>
+    <li>
+        <a ui-sref="#">About</a>
+    </li>
+    <li>
+        <a ui-sref="web.stories">Stories</a>
+    </li>
+    <li>
+        <a ui-sref="web.contact">Contact Us</a>
+    </li>
+    <li>
+        <a ui-sref="web.cards">Cards</a>
+    </li>
+    <li>
+        <a ui-sref="web.searchCards">SearchCards</a>
+    </li>
+</ul> -->

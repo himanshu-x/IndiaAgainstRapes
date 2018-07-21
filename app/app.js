@@ -8,7 +8,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         .state("web", {
             url: "/web",
             templateUrl: "../views/master.html",
-
+            controller: "masterController as ctrl"
         })
 
         .state("web.home", {
@@ -68,6 +68,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
                 "@web": {
                     templateUrl: "../views/searchCards.html",
                     controller: "searchCardsController as ctrl"
+                }
+            }
+
+        })
+        .state("web.searchCards.fullCard", {
+            url: "/:cid",
+            views: {
+                "@web": {
+                    templateUrl: "../views/fullCard.html",
+                    controller: "fullCardController as ctrl"
                 }
             }
 
