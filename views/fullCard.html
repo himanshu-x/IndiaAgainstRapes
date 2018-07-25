@@ -7,7 +7,7 @@
                     <li class="collection-item avatar border-zero">
                         <i class="material-icons circle material-circle-r"></i>
                         <span class="title collection-info-text"> {{details.name}}</span>
-                        <a class="right lime-text">
+                        <a class="right lime-text" ng-click="openDialpad(details.phone)">
                             <i class="Small material-icons">call</i>
                         </a>
                     </li>
@@ -32,13 +32,17 @@
                         <span class="title collection-info-text"> {{details.work}}</span>
                     </li>
                     <li class="collection-item avatar border-zero">
+                            <i class="material-icons circle material-circle-r"></i>
+                            <span class="title collection-info-text"> {{details.phone}}</span>
+                        </li>
+                    <li class="collection-item avatar border-zero">
                         <i class="material-icons circle material-circle-r"></i>
                         <span class="title collection-info-text"> {{details.address}}</span>
                     </li>
                     <li class="card-action">
 
                         <a>
-                            <i class="Small material-icons">send</i>
+                            <i class="Small material-icons">email</i>
                         </a>
                     </li>
                 </ul>

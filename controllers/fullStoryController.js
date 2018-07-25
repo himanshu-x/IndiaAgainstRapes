@@ -42,7 +42,7 @@ angular.module("myApp")
                 descr: "Candle March is set against the backdrop of the issues of women empowerment and injustice in india.It releases on December.",
                 imageUrl: "../images/story1.jpg"
             }
-        ]
+        ];
 
         $scope.currentStory = [];
         console.log($stateParams.currentStory)
@@ -59,7 +59,3 @@ angular.module("myApp")
         };
         init();
     }]);
-
-
-
-

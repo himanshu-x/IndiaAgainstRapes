@@ -2,6 +2,15 @@
 angular.module("myApp")
     .controller('homeController', ['$scope', function ($scope) {
 
+        function init() {
+            $scope.myCardTitle = "HItesh yadava ka direvtive";
+            $scope.myCardPhone = "+919558211215";
+
+            $scope.mySecondCardTitle = "Mty footerer diretive visahl";
+            $scope.mySecondCardPhone = "+918860762607";
+
+        };
+
         $scope.topStories = [
             {
                 id: 1,
@@ -21,10 +30,13 @@ angular.module("myApp")
                 descr: "Candle March is set against the backdrop of the issues of women empowerment and injustice in india.It releases on December.",
                 imageUrl: "../images/story1.jpg"
             }
-           
+
         ]
 
         $(document).ready(function () {
             $('.slider').slider();
         });
+
+        init();
+
     }]);
