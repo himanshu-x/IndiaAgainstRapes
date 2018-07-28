@@ -34,11 +34,7 @@
         </li>
     </ul>
 </div>
-
-
 <div class="container">
-    <iar-card card-title="myCardTitle" card-phone="myCardPhone"></iar-card>
-
     <div class="row">
         <div class="col s12 m4" ng-repeat="item in topStories">
             <div class="card" ui-sref="web.stories.fullStory({'storyId': item.id})">
@@ -56,11 +52,7 @@
                 <div class="card-content">
                     {{item.descr}}
                 </div>
-
             </div>
         </div>
     </div>
-
-    <iar-card card-title="mySecondCardTitle" card-phone="mySecondCardPhone"></iar-card>
-
 </div>

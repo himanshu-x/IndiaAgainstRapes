@@ -3,12 +3,7 @@ angular.module("myApp")
     .controller('homeController', ['$scope', function ($scope) {
 
         function init() {
-            $scope.myCardTitle = "HItesh yadava ka direvtive";
-            $scope.myCardPhone = "+919558211215";
-
-            $scope.mySecondCardTitle = "Mty footerer diretive visahl";
-            $scope.mySecondCardPhone = "+918860762607";
-
+           
         };
 
         $scope.topStories = [

@@ -1,14 +1,21 @@
 <div class="row">
-    <div class="col s12 m6">
+    <div class="col s12">
         <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-                <span class="card-title">{{cardTitle}}</span>
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                    little markup to use effectively.</p>
+                <span class="card-title">{{cardName}}</span>
+                <p>{{cardCompany}}</p>
+                <p>{{cardUcn}}</p>
+                <p>{{cardEmail}}</p>
+                <p>{{cardCid}}</p>
+                <p>{{cardAddress}}</p>
+                <p>{{cardPhone}}</p>
             </div>
             <div class="card-action">
                 <button class="waves-effect waves-light btn" ng-click="openDialpad(cardPhone)">
-                    <i class="material-icons left">phone</i>Call
+                    <i class="material-icons left">phone</i>
+                </button>
+                <button class="waves-effect waves-light btn" ng-click="sendMail(cardEmail)">
+                    <i class="material-icons left">email</i>
                 </button>
             </div>
         </div>
