@@ -7,9 +7,6 @@
                     <li class="collection-item avatar border-zero">
                         <i class="material-icons circle material-circle-r"></i>
                         <span class="title collection-info-text"> {{details.name}}</span>
-                        <a class="right lime-text" ng-click="openDialpad(details.phone)">
-                            <i class="Small material-icons">call</i>
-                        </a>
                     </li>
                     <li class="collection-item avatar border-zero">
                         <i class="material-icons circle material-circle-r"></i>
@@ -32,16 +29,21 @@
                         <span class="title collection-info-text"> {{details.work}}</span>
                     </li>
                     <li class="collection-item avatar border-zero">
-                            <i class="material-icons circle material-circle-r"></i>
-                            <span class="title collection-info-text"> {{details.phone}}</span>
-                        </li>
+                        <i class="material-icons circle material-circle-r"></i>
+                        <span class="title collection-info-text"> {{details.phone}}</span>
+                    </li>
                     <li class="collection-item avatar border-zero">
                         <i class="material-icons circle material-circle-r"></i>
                         <span class="title collection-info-text"> {{details.address}}</span>
                     </li>
                     <li class="card-action">
-
-                        <a>
+                        <a class="left lime-text" ng-click="openDialpad(details.phone)">
+                            <i class="Small material-icons">call</i>
+                        </a>
+                        <a class=" lime-text">
+                                <i class="Small material-icons">message</i>
+                            </a>
+                        <a class="lime-text">
                             <i class="Small material-icons">email</i>
                         </a>
                     </li>
@@ -50,48 +52,3 @@
         </div>
     </div>
 </div>
-
-<section class="container">
-    <div class="row">
-        <div class="col s12 m6">
-            <ul class="collection">
-                <li class="collection-item avatar">
-                    <img src="images/yuna.jpg" alt="" class="circle">
-                    <span class="title">Title</span>
-                    <p>First Line
-                    </p>
-                    <a href="#!" class="secondary-content">
-                        <i class="material-icons">grade</i>
-                    </a>
-                </li>
-                <li class="collection-item avatar">
-                    <i class="material-icons circle">folder</i>
-                    <span class="title">Title</span>
-                    <p>First Line
-                    </p>
-                    <a href="#!" class="secondary-content">
-                        <i class="material-icons">grade</i>
-                    </a>
-                </li>
-                <li class="collection-item avatar">
-                    <i class="material-icons circle green">insert_chart</i>
-                    <span class="title">Title</span>
-                    <p>First Line
-                    </p>
-                    <a href="#!" class="secondary-content">
-                        <i class="material-icons">grade</i>
-                    </a>
-                </li>
-                <li class="collection-item avatar">
-                    <i class="material-icons circle red">play_arrow</i>
-                    <span class="title">Title</span>
-                    <p>First Line
-                    </p>
-                    <a href="#!" class="secondary-content">
-                        <i class="material-icons">grade</i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>

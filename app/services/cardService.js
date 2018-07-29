@@ -1,4 +1,4 @@
-angular.module("myApp").factory('cardService', ["$http", "$q","$httpParamSerializer", function ($http, $q, $httpParamSerializer,) {
+angular.module("myApp").factory('cardService', ["$http","$q","$httpParamSerializer", function ($http, $q, $httpParamSerializer,) {
 
     function getCard() {
         var dfd = $q.defer();
@@ -40,8 +40,6 @@ angular.module("myApp").factory('cardService', ["$http", "$q","$httpParamSeriali
             }
         ).then(function success(response) {
             dfd.resolve(response);
-
-
         }, function error(reason) {
             dfd.reject(reason);
 
@@ -72,9 +70,6 @@ angular.module("myApp").factory('cardService', ["$http", "$q","$httpParamSeriali
 
         return dfd.promise; //resolve, reject
     };
-
-
-
     return {
         getCard: getCard,
         searchCard: searchCard,
